@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Freelancing Opportunity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .opportunity-info {
+            margin-bottom: 20px;
+        }
+        .opportunity-info h2 {
+            color: #333;
+        }
+        .opportunity-info p {
+            color: #666;
+        }
+        input[type="button"] {
+            background-color: #FF4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+  
+        input[type="button"]:hover {
+            background-color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Graphic Design Freelancing Opportunity</h1>
+        
+        <div class="opportunity-info">
+            <h2>Project Title</h2>
+            <p>Graphic Design Services</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Description</h2>
+            <p>Creating visual concepts, designs, and layouts for various purposes such as logos, branding materials, advertisements, and digital media.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Duration</h2>
+            <p>Varies depending on the project scope and complexity.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Skills Required</h2>
+            <p>Proficiency in graphic design software such as Adobe Photoshop, Illustrator, or InDesign. Strong understanding of design principles, typography, and color theory.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Compensation</h2>
+            <p>Compensation may be based on hourly rates, per-project basis, or negotiated flat fees.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Remote or Onsite</h2>
+            <p>Graphic design projects can typically be performed remotely.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Client Information</h2>
+            <p>Clients may include businesses, organizations, or individuals seeking professional graphic design services for their branding and marketing materials.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Application Process</h2>
+            <p>Submit a portfolio showcasing previous graphic design work, along with a resume highlighting relevant experience and skills.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Portfolio Showcase</h2>
+            <p>Showcase examples of previous graphic design projects, including logos, posters, advertisements, or branding materials.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Communication Channels</h2>
+            <p>Communication with clients may occur via email, messaging platforms, or project management tools.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Feedback and Rating System</h2>
+            <p>Some freelancing platforms or clients may provide feedback and ratings based on the quality of graphic design services provided.</p>
+        </div>
+        
+    </div>
+    <input type="button" name="Enter" value="APPLY">
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <h1>Notice</h1>
+          <p>You have successfully applied.</p>
+        </div>
+      </div>
+    
+</body>
+<script>
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const popup = document.getElementById('popup');
+    
+    openBtn.addEventListener('click', () => {
+      popup.style.display = 'block';
+    });
+    
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+    
+    // Close the pop-up if user clicks outside the pop-up content
+    window.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+    </script>
+    
+</html>

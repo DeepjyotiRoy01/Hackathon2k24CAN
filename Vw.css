@@ -1,0 +1,179 @@
+/* styles.css */
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    background: url(2.jpg);
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: rgb(141, 120, 92);
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+
+  .job-w{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: transparent;
+  }
+  
+  
+  
+  /* Navigation Styles */
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding: 20px;
+  }
+  
+  input[type="button"] {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #FF6347;
+  }
+  
+  .job-listings {
+    /* display: flex; */
+    width: 100%;
+    /* background-color: green; */
+    /* Set display to flex */
+    /* flex-wrap: wrap; */
+    /* flex:3; */
+    /* Allow items to wrap onto multiple lines */
+  }
+  
+  .job {
+    width: 100%;
+
+    /* Set width of each job listing */
+    margin: 10px;
+  }
+  
+  
+  
+  /* Additional styling for buttons */
+  .apply-btn {
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .rupee::before {
+    content: "\20B9";
+    /* Unicode character code for the Rupee symbol */
+  }
+  
+  .clock::before {
+    content: "\23F0";
+    /* Unicode character code for the clock symbol */
+  }
+  
+  .location {
+    font-size: 1.2em;
+    /* Adjust the size of the location symbol */
+    margin-right: 5px;
+    /* Adjust spacing between the symbol and text */
+  }
+  
+  
+
+  
+  .apply-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+ 
+  
+  /* Additional styling for buttons */
+  .apply-btn {
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .job {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .apply-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .h1 {
+    background-color: antiquewhite;
+    color: black;
+  }
+  
+  .center {
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+  }
+  
+  .location {
+    font-size: 1.2em;
+    /* Adjust the size of the location symbol */
+    margin-right: 5px;
+    /* Adjust spacing between the symbol and text */
+  }
+  
+  
+  .apply-btn:hover {
+    background-color: #555;
+  }

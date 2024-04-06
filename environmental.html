@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Conservation Internship</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .opportunity-info {
+            margin-bottom: 20px;
+        }
+        .opportunity-info h2 {
+            color: #333;
+        }
+        .opportunity-info p {
+            color: #666;
+        }
+        input[type="button"] {
+            background-color: #FF4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+  
+        input[type="button"]:hover {
+            background-color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Environmental Conservation Internship</h1>
+        
+        <div class="opportunity-info">
+            <h2>Title</h2>
+            <p>Environmental Conservation Internship</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Description</h2>
+            <p>Assisting in various environmental conservation projects, such as habitat restoration, wildlife monitoring, and community outreach programs.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Duration</h2>
+            <p>3 months (May-August)</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Skills Required</h2>
+            <p>Strong interest in environmental conservation, ability to work in outdoor environments, basic knowledge of ecological principles, and good communication skills.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Compensation</h2>
+            <p>Unpaid; may offer stipend or course credit.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Remote or Onsite</h2>
+            <p>Onsite</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Organization Information</h2>
+            <p>Non-profit organization dedicated to environmental conservation and wildlife protection.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Application Process</h2>
+            <p>Submit a resume and cover letter outlining your interest in environmental conservation and relevant experience.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Portfolio Showcase</h2>
+            <p>Provide examples of any previous volunteer work or projects related to environmental conservation.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Communication Channels</h2>
+            <p>Email or phone for inquiries; in-person interview for selected candidates.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Feedback and Evaluation</h2>
+            <p>Regular feedback sessions with supervisors to evaluate performance and provide guidance for improvement.</p>
+        </div>
+        
+    </div>
+    <input type="button" name="Enter" value="APPLY">
+    
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" id="closeBtn">&times;</span>
+      <h1>Notice</h1>
+      <p>You have successfully applied.</p>
+    </div>
+  </div>
+
+</body>
+<script>
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const popup = document.getElementById('popup');
+    
+    openBtn.addEventListener('click', () => {
+      popup.style.display = 'block';
+    });
+    
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+    
+    // Close the pop-up if user clicks outside the pop-up content
+    window.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+    </script>
+    
+</html>

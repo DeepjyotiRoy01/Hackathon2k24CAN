@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Entry Freelancing Opportunity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .opportunity-info {
+            margin-bottom: 20px;
+        }
+        .opportunity-info h2 {
+            color: #333;
+        }
+        .opportunity-info p {
+            color: #666;
+        }
+        input[type="button"] {
+            background-color: #FF4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+  
+        input[type="button"]:hover {
+            background-color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Entry Freelancing Opportunity</h1>
+        
+        <div class="opportunity-info">
+            <h2>Project Title</h2>
+            <p>Data Entry Services</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Description</h2>
+            <p>Performing data entry tasks such as inputting, updating, and maintaining accurate records or databases.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Duration</h2>
+            <p>Varies depending on the project size and complexity.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Skills Required</h2>
+            <p>Proficiency in typing and data entry. Attention to detail and accuracy are essential.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Compensation</h2>
+            <p>Compensation may be based on hourly rates, per-project basis, or data entry volume.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Remote or Onsite</h2>
+            <p>Most data entry projects can be performed remotely.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Client Information</h2>
+            <p>Clients may include businesses, organizations, or individuals requiring assistance with data management tasks.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Application Process</h2>
+            <p>Submit a resume highlighting relevant experience in data entry. Some clients may require a data entry test to assess accuracy and speed.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Portfolio Showcase</h2>
+            <p>While not typically required for data entry, you may include any relevant experience or certifications in data entry.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Communication Channels</h2>
+            <p>Communication with clients may occur via email, messaging platforms, or project management tools.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Feedback and Rating System</h2>
+            <p>Some freelancing platforms or clients may provide feedback and ratings based on the quality of work and professionalism.</p>
+        </div>
+        
+    </div>
+    <input type="button" name="Enter" value="APPLY">
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <h1>Notice</h1>
+          <p>You have successfully applied.</p>
+        </div>
+      </div>
+    
+</body>
+<script>
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const popup = document.getElementById('popup');
+    
+    openBtn.addEventListener('click', () => {
+      popup.style.display = 'block';
+    });
+    
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+    
+    // Close the pop-up if user clicks outside the pop-up content
+    window.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+    </script>
+    
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voiceover Services Freelancing Opportunity</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .opportunity-info {
+            margin-bottom: 20px;
+        }
+        .opportunity-info h2 {
+            color: #333;
+        }
+        .opportunity-info p {
+            color: #666;
+        }
+        input[type="button"] {
+            background-color: #FF4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+  
+        input[type="button"]:hover {
+            background-color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Voiceover Services</h1>
+        
+        <div class="opportunity-info">
+            <h2>Project Title</h2>
+            <p>Voiceover Services</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Description</h2>
+            <p>Providing professional voice recordings for various purposes such as commercials, e-learning modules, audiobooks, animated videos, phone systems, and more.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Duration</h2>
+            <p>Varies depending on the length and complexity of the voiceover project.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Skills Required</h2>
+            <p>Clear and articulate voice, ability to convey emotions and tones effectively, proficiency in pronunciation and diction, and access to high-quality recording equipment and software.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Compensation</h2>
+            <p>Compensation may be based on factors such as project duration, word count, or negotiated flat fees.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Remote or Onsite</h2>
+            <p>Voiceover services are typically performed remotely.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Client Information</h2>
+            <p>Clients may include advertising agencies, production companies, e-learning platforms, authors, businesses, or individuals seeking professional voice recordings for their projects.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Application Process</h2>
+            <p>Submit a demo reel showcasing different voice styles and accents, along with a resume highlighting any relevant experience or training in voice acting or broadcasting.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Portfolio Showcase</h2>
+            <p>Include samples of previous voiceover work, demonstrating versatility and proficiency in different genres and styles.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Communication Channels</h2>
+            <p>Communication with clients may occur via email, messaging platforms, or voice conferencing.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Feedback and Rating System</h2>
+            <p>Clients may provide feedback and ratings based on the quality of voiceover services provided, which can help build a reputation in the industry.</p>
+        </div>
+        
+    </div>
+    <input type="button" name="Enter" value="APPLY">
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <h1>Notice</h1>
+          <p>You have successfully applied.</p>
+        </div>
+      </div>
+    
+</body>
+<script>
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const popup = document.getElementById('popup');
+    
+    openBtn.addEventListener('click', () => {
+      popup.style.display = 'block';
+    });
+    
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+    
+    // Close the pop-up if user clicks outside the pop-up content
+    window.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+    </script>
+    
+</html>

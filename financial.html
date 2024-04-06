@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Analysis Internship</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .opportunity-info {
+            margin-bottom: 20px;
+        }
+        .opportunity-info h2 {
+            color: #333;
+        }
+        .opportunity-info p {
+            color: #666;
+        }
+        input[type="button"] {
+            background-color: #FF4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+  
+        input[type="button"]:hover {
+            background-color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Analysis Internship</h1>
+        
+        <div class="opportunity-info">
+            <h2>Title</h2>
+            <p>Financial Analysis Internship</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Description</h2>
+            <p>Assisting in financial data analysis, preparing reports, conducting market research, assisting in budgeting and forecasting, and supporting financial decision-making processes.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Duration</h2>
+            <p>3 months (July-September)</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Skills Required</h2>
+            <p>Strong analytical skills, proficiency in Microsoft Excel or financial software, understanding of financial principles, and attention to detail.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Compensation</h2>
+            <p>Paid internship with hourly wages or stipend.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Remote or Onsite</h2>
+            <p>Flexible; tasks may be performed remotely or onsite depending on company policies.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Organization Information</h2>
+            <p>Financial services firm, investment bank, or corporate finance department.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Application Process</h2>
+            <p>Submit a resume, cover letter, and academic transcripts highlighting relevant coursework or experiences in finance or accounting.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Portfolio Showcase</h2>
+            <p>Include any financial analysis projects, case studies, or research papers completed during coursework.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Communication Channels</h2>
+            <p>Email, phone, or video conferencing for remote interns; in-person meetings and team collaboration tools for onsite interns.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Feedback and Evaluation</h2>
+            <p>Regular performance evaluations with supervisors and opportunities for mentorship and skill development.</p>
+        </div>
+        
+    </div>
+    <input type="button" name="Enter" value="APPLY">
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <h1>Notice</h1>
+          <p>You have successfully applied.</p>
+        </div>
+      </div>
+</body>
+<script>
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const popup = document.getElementById('popup');
+    
+    openBtn.addEventListener('click', () => {
+      popup.style.display = 'block';
+    });
+    
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+    
+    // Close the pop-up if user clicks outside the pop-up content
+    window.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+    </script>
+    
+</html>

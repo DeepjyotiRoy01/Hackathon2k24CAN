@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homeless Shelter Volunteer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .opportunity-info {
+            margin-bottom: 20px;
+        }
+        .opportunity-info h2 {
+            color: #333;
+        }
+        .opportunity-info p {
+            color: #666;
+        }
+        input[type="button"] {
+            background-color: #FF4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+  
+        input[type="button"]:hover {
+            background-color: #FF6347;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Homeless Shelter Volunteer</h1>
+        
+        <div class="opportunity-info">
+            <h2>Title</h2>
+            <p>Homeless Shelter Volunteer</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Description</h2>
+            <p>Assisting in various tasks within the homeless shelter, such as serving meals, organizing donations, providing companionship and support to residents, and helping with shelter maintenance.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Duration</h2>
+            <p>Flexible; volunteers can choose shifts based on availability.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Skills Required</h2>
+            <p>Compassion, empathy, good communication skills, ability to work in a team, and willingness to help individuals experiencing homelessness.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Compensation</h2>
+            <p>Unpaid; volunteers contribute their time and effort to support the needs of homeless individuals.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Remote or Onsite</h2>
+            <p>Onsite; requires presence at the homeless shelter or outreach center.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Organization Information</h2>
+            <p>Local homeless shelter, transitional housing facility, or nonprofit organization providing services to homeless individuals.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Application Process</h2>
+            <p>Fill out a volunteer application form available on the organization's website or contact the volunteer coordinator directly.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Portfolio Showcase</h2>
+            <p>Not applicable for volunteering roles; however, previous experience in social services or community involvement may be mentioned in the application.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Communication Channels</h2>
+            <p>Direct communication with volunteer coordinators or shelter staff via email, phone, or in-person meetings.</p>
+        </div>
+        
+        <div class="opportunity-info">
+            <h2>Feedback and Rating System</h2>
+            <p>Informal feedback may be provided by shelter staff and residents; volunteers may also participate in periodic feedback sessions to discuss their experiences and suggestions for improvement.</p>
+        </div>
+        
+    </div>
+    <input type="button" name="Enter" value="APPLY">
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="closeBtn">&times;</span>
+          <h1>Notice</h1>
+          <p>You have successfully applied.</p>
+        </div>
+      </div>
+    
+</body>
+<script>
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const popup = document.getElementById('popup');
+    
+    openBtn.addEventListener('click', () => {
+      popup.style.display = 'block';
+    });
+    
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+    
+    // Close the pop-up if user clicks outside the pop-up content
+    window.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+    </script>
+    
+</html>

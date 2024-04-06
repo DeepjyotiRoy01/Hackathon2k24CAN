@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        h1 {
+            color: #FF4500;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="button"] {
+            background-color: #FF4500;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="button"]:hover {
+            background-color: #FF6347;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <div class="line-using-border"></div>
+    <h1>The Feedback Form</h1>
+    <form>
+        <label>
+            Name: <input type="text" name="Name"><br>
+        </label>
+        <label>
+            Date of Birth: <input type="date" name="Date"><br>
+        </label>
+        <label>
+            Email ID: <input type="email" name="Email"><br>
+        </label>
+        <label>
+            User ID: <input type="text" name="User ID"><br>
+        </label>
+        <label>
+            Password: <input type="password" name="password"><br>
+        </label>
+        <label for="feedback">
+            Your Feedback:
+        </label><br>
+        <textarea id="feedback" rows="10" cols="60" name="Feedback" spellcheck="true">Enter your feedback here</textarea><br>
+        <a href="Start2.html"><input type="button" name="Enter" value="Submit Feedback"></a><br>
+    </form>
+</body>
+</html>
